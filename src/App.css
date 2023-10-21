@@ -44,7 +44,7 @@ body {
   background-image: url("./svg/up.svg") !important;
 }
 .accordion-body {
-  padding: 50px 0 !important;
+  padding: 50px 10px !important;
   background-color: #eaf0f6;
 }
 .card-container {
