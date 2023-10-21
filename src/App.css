@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+  background-color: brown;
+}
+.navbar {
+  background-color: white !important;
+  height: 100px;
+}
+.body-container {
+  background-color: #090b1d;
+  height: 500px;
+}
+.accordion-container {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordion {
+  width: 100% !important;
+}
+
+.accordion-header button:focus {
+  border-color: #abe8d8 !important;
+}
+.accordion-header button {
+  background-color: #11b98f !important;
+  z-index: 999;
+  color: white;
+}
+.accordion-header button:not(.collapsed) {
+  color: white;
+}
+.accordion-header .collapsed {
+  color: white !important;
+}
+.accordion-button::after {
+  background-image: url("./svg/up.svg") !important;
+}
+.accordion-body {
+  padding: 50px 0 !important;
+  background-color: #eaf0f6;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.accordion-body h5 {
+  margin-bottom: 30px !important;
+  font-weight: 600;
+}
+.kitchen-items h5 {
+  margin: 80px 0 !important;
+}
+.tool {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.tool p {
+  margin: 0;
+}
+.tools {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .accordion-container {
+    margin: 50px;
+  }
+  .accordion-body {
+    padding: 50px !important;
+  }
+  .card-container {
+    justify-content: space-evenly !important;
+  }
+}
