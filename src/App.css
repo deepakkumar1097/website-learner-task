@@ -63,15 +63,20 @@ body {
 .tool {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 .tool p {
   margin: 0;
 }
+.tool button {
+  width: "250px" !important;
+  height: "55px" !important;
+}
 .tools {
   display: flex;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 30px;
+  margin-top: 30px;
+  flex-direction: column;
 }
 @media only screen and (min-width: 768px) {
   .accordion-container {
@@ -82,5 +87,11 @@ body {
   }
   .card-container {
     justify-content: space-evenly !important;
+  }
+  .tools {
+    flex-direction: row;
+  }
+  .tool button {
+    width: "250px" !important;
   }
 }

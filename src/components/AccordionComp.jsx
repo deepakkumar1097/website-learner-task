@@ -118,7 +118,8 @@ function AccordionComp() {
                 <ButtonComp
                   text={"#1 Tool"}
                   background={"#12AA84"}
-                  border={"none"}
+                  border={"transparent"}
+                  color="white"
                 />
                 <p>Keyword.io</p>
               </div>
@@ -126,8 +127,9 @@ function AccordionComp() {
                 <div className="tool tool-two">
                   <ButtonComp
                     text={"#2 Tool"}
-                    background="white"
+                    background="transparent"
                     border="#12AA84"
+                    color="#12AA84"
                   />
                   <p>Keyword Sheeter</p>
                 </div>
@@ -136,6 +138,7 @@ function AccordionComp() {
                     text={"#3 Tool"}
                     background={"transparent"}
                     border={"#12AA84"}
+                    color="#12AA84"
                   />
                   <p>Keyword Sheeter</p>
                 </div>
@@ -146,13 +149,38 @@ function AccordionComp() {
         <Accordion.Item eventKey="3">
           <Accordion.Header>Step 4 : Find Number of Searches</Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            <div className="keywords-container">
+              <h5>Tools to get Search Volume</h5>
+              <div className="tool tool-one">
+                <ButtonComp
+                  text={"#1 Tool"}
+                  background={"#12AA84"}
+                  border={"transparent"}
+                  color="white"
+                />
+                <p>SemScoop</p>
+              </div>
+              <div className="tools">
+                <div className="tool tool-two">
+                  <ButtonComp
+                    text={"#2 Tool"}
+                    background="transparent"
+                    border="#12AA84"
+                    color="#12AA84"
+                  />
+                  <p>LinkGraph</p>
+                </div>
+                <div className="tool tool-three">
+                  <ButtonComp
+                    text={"#3 Tool"}
+                    background={"transparent"}
+                    border={"#12AA84"}
+                    color="#12AA84"
+                  />
+                  <p>SearchVolume.io</p>
+                </div>
+              </div>
+            </div>
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
